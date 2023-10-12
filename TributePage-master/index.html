@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+
+        }
+
+        body {
+            background-color: rgb(189, 189, 189);
+            
+        }
+
+        #navbar {
+            /* width: 100%; */
+            height: 70px;
+            padding: 10px;
+            background-color: rgb(23, 11, 11);
+            position: sticky;
+        }
+
+        #button {
+       
+            position: relative;
+            width: 400px;
+            left: 1000px;
+            bottom: 50px;
+        }
+
+        #button a {
+            /* border: 1px solid; */
+            background-color: rgba(255, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 1px 20px;
+            letter-spacing: 0.8px;
+            text-decoration: none;
+            transition: 1s ease;
+        }
+
+        #button a:hover {
+            /* border: 1px solid; */
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 20px 1px;
+            text-decoration: none;
+            transition: 1s ease;
+        }
+
+
+        .cover-image {
+            background-image: url('./Cover-Page.jpg');
+            height: 580px;
+            margin-top: -20px;
+            /* background-attachment: fixed; */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 1500px 500px;
+
+        }
+
+        #title {
+            padding-left: 20px;
+        }
+
+        #title h1 {
+            font-size: 70px;
+            color: rgb(255, 128, 0);
+            text-shadow: 2px 2px 20px rgb(75, 75, 75);
+            padding-top: 60px;
+
+        }
+
+        #title h4 {
+            font-size: 35px;
+            color: #dd2420;
+            padding-top: 180px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 10px rgb(75, 75, 75);
+        }
+
+        #about {
+            height: 180px;
+            width: 1200px;
+            background-color: rgb(255, 128, 0);
+            border-radius: 20px;
+            padding: 15px 40px 30px 40px;
+            margin: -5px auto;
+            font-size: 18px;
+            box-shadow: 5px 5px 15px 2px;
+        }
+
+        #Personal_info {
+            height: 150px;
+            width: 600px;
+            background-color: rgb(105, 177, 205);
+            margin: 35px auto;
+            padding: 20px 170px 90px 170px;
+            border-radius: 20px;
+            font-size: 18px;
+            box-shadow: 5px 5px 15px 2px;
+
+        }
+
+        tr a {
+            color: rgb(0, 8, 126);
+            text-decoration: none;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        td {
+            padding-left: 10px;
+        }
+
+        #timeline {
+            height: 600px;
+            width: 850px;
+            background-color: rgb(85, 197, 37);
+            margin: 25px auto;
+            padding: 20px 170px 90px 170px;
+            border-radius: 20px;
+            font-size: 18px;
+            box-shadow: 5px 5px 15px 2px;
+
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        ul strong {
+            background-color: rgb(255, 221, 110);
+        }
+
+        #img1 {
+            position: relative;
+            right: 270px;
+            top: 150px;
+
+        }
+
+        img {
+            box-shadow: 5px 5px 15px 2px;
+            display: inline-block;
+
+        }
+
+        #know {
+            height: 60px;
+            width: 900px;
+            position: relative;
+            top: 130px;
+            left: 300px;
+            text-align: center;
+            font-size: 25px;
+
+        }
+
+        #know a {
+            color: black;
+            padding: 10px 150px;
+            border-radius: 50px;
+            background-color: rgb(189, 189, 189);
+            letter-spacing: 5px;
+            box-shadow: 2px 2px 15px 1px;
+            text-decoration: none;
+            font-size: large;
+        }
+
+        #know a:hover {
+            color: black;
+            padding: 10px 150px;
+            border-radius: 50px;
+            background-color: rgb(160, 159, 159);
+            letter-spacing: 5px;
+            box-shadow: 2px 2px 15px 1px;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+
+        #media iframe {
+            height: 250px;
+            width: 450px;
+            /* border: 5px solid red; */
+            padding: 10px;
+            position: relative;
+            left: 850px;
+            top: 60px;
+            box-shadow: 5px 5px 15px 2px;
+            transition: 0.5s ease-in-out;
+        }
+
+        #media iframe:hover {
+            height: 255px;
+            width: 455px;
+            padding: 10px;
+            border: 1px solid rgb(0, 0, 0);
+            position: relative;
+            left: 855px;
+            top: 60px;
+            box-shadow: 5px 5px 15px 2px;
+            
+        }
+
+        #logo {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-image: url(./3422f274ee724f5b55494e68894bd6fc.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 180px 100px;
+            position: relative;
+            left: 30px;
+            top: -5px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <nav id="navbar">
+            <div id="logo">
+
+            </div>
+
+            <div id="button">
+                <a href="#about">About</a>
+                <a href="#Personal_info">Personal Info</a>
+                <a href="#timeline">Timeline</a>
+            </div>
+        </nav>
+        <div class="cover-image ">
+            <div id="title">
+                <h4>Outstanding and Inspiring Legend of The World</h4>
+                <h1>Chhatrapati Shivaji Maharaj</h1>
+            </div>
+
+        </div>
+
+        <div id="about">
+            <h2>
+                <center> About
+                    <hr>
+                </center>
+            </h2>
+            <p> <br> Chhatrapati Shivaji Maharaj was the founder of the Maratha Empire in western India. He is considered
+                to be one of the greatest warriors of his time and even today, stories of his exploits are narrated
+                as a part of the folklore. With his valor and great administrative skills, Shivaji Maharaj carved
+                out an enclave from the declining Adilshahi sultanate of Bijapur. It eventually became the genesis
+                of the Maratha Empire. After establishing his rule, Shivaji Maharaj implemented a competent and
+                progressive administration with the help of a disciplined military and well-established
+                administrative set-up. Shivaji Maharaj is well-known for his innovative military tactics that
+                centered around non-conventional methods leveraging strategic factors like geography, speed, and
+                surprise to defeat his more powerful enemies.</p>
+        </div>
+
+        <div id="Personal_info">
+            <table>
+                <h2>
+                    <center> Personal Info
+                        <hr>
+                    </center>
+                </h2>
+                <tr>
+                    <th> Name: </th>
+                    <td>Shivaji Bhosale</td>
+                </tr>
+                <tr>
+                    <th>Date of Birth:</th>
+                    <td> 19 February, 1630</td>
+                </tr>
+                <tr>
+                    <th>Birthplace:</th>
+                    <td><a href="https://en.wikipedia.org/wiki/Shivneri_Fort" target="_blank">Shivenri Fort, Pune</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Parents:</th>
+                    <td><a href="https://en.wikipedia.org/wiki/Shahaji" target="_blank">Shahaji Bhosale (Father)</a> and
+                        <a href="https://en.wikipedia.org/wiki/Jijabai" target="_blank">Jijabai (Mother)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th><strong>Spouse:</th>
+                    <td>Saibai, Soyarabai, Putalabai, Sakvarbai, Laxmibai, Kashibai</td>
+                </tr>
+                <tr>
+                    <th>Death:</th>
+                    <td>3 April, 1680</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="timeline">
+            <h2>
+                <center> Timeline of Shivaji Maharaj's Life</center>
+            </h2>
+            <hr>
+            <ul>
+                <li><strong>February 19, 1630</strong> - Birth of Shivaji Maharaj on the hill-fort of Shivneri</li>
+                <li><strong>1630-1645</strong> - Upbringing under the guidance of mother Jijabai and teacher Dadaji
+                    Kondev.</li>
+                <li><strong>May 16, 1640</strong> - Saibai and Shivaji Maharaj were married while still in their
+                    childhood.</li>
+                <li><strong>1645</strong> - Oath of Swarajya at Raireshwar temple</li>
+                <li><strong>By 1645</strong> - Shivaji Maharaj acquired control of several strategic from under the
+                    Bijapur Sultanate around Pune</li>
+                <li><strong>November 10, 1659</strong> - Shivaji Maharaj killed Afzal Khan at the foot of Pratapgad
+                    fort</li>
+                <li><strong>Mid 1660</strong> - Siege of Panhala by Siddi Jauhar's army.</li>
+                <li><strong>July 13, 1660</strong> - Battle of Pavan Khind</li>
+                <li><strong>April 1663</strong> - Attack on Shaista Khan</li>
+                <li><strong>January 5, 1664</strong> - Sack of Surat</li>
+                <li><strong>June 11, 1665</strong> - Treaty of Purandar</li>
+                <li><strong>August 17, 1666</strong> - Arrest in Agra and escape</li>
+                <li><strong>Between 1666 - 1668:</strong> - Peace with Mughals</li>
+                <li><strong>February 4, 1670</strong> - Battle of Sinhagad</li>
+                <li><strong>October 2, 1670</strong> - Shivaji Maharaj sacked Surat for second time.</li>
+                <li><strong>June 6, 1674</strong> - Shivaji Maharaj was crowned king of the Marathas in a lavish
+                    ceremony at Raigad.</li>
+                <li><strong>End of 1676</strong> - Conquest in Southern India</li>
+                <li><strong>April 3, 1680</strong> - Shivaji Maharaj died at the age of 52, on the eve of Hanuman
+                    Jayanti</li>
+            </ul>
+            <div id="img1">
+                <img src="./Shivaji_Maharaj.jpg" height="350px" width="600px" alt="">
+
+            </div>
+        </div>
+        <div id="media">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ud3uAexKqPc?si=CkUpa_MscRnT2aKf"
+                 title="YouTube video player" frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                 allowfullscreen></iframe>
+            <br>
+        </div>
+        <div id="know">
+            <a href="https://en.wikipedia.org/wiki/Shivaji" target="_blank">For More Information click here</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
